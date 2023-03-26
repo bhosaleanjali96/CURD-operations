@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operations</title>
+    <link type="text/css" rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="Username">Username</label>
+                        <input type="text" name="Username" id="Username">
+                    </div>
+                    <div>
+                        <label for="Dob">Date of birth</label>
+                        <input type="date" name="Dob" id="Dob">
+                    </div>
+                    <div>
+                        <label for="Email">Email</label>
+                        <input type="email" name="Email" id="Email">
+                    </div>
+                    <div>
+                        <label for="Age">Age</label>
+                        <input type="number" name="Age" id="Age">
+                    </div>
+
+                    <div class="form-action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Username</th>
+                                <th>DOB</th>
+                                <th>Email</th>
+                                <th>Age</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
